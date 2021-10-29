@@ -1,0 +1,165 @@
+<html>
+
+<head>
+
+    <title> Roopantar </title>
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+
+
+
+    <center>
+        <h1 class="display-1" style="color: aliceblue;">Roopantar Panjabi</h1>
+
+        <!-- SHOW Books -->
+        <section class="showMovie">
+            <div class="container py-3">
+                <div class="row mt-" id="moviesRow">
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <div class="movieShow ">
+                            <div class="onMovie">
+
+                                <img src="/images/front.png" class="img-fluid">
+                                <center>
+                                    <div style="color: aliceblue;">
+
+                                        <h5>
+
+                                            Bikhre Rahan De Pandi
+                                            <br>
+                                            By
+                                            <br>
+                                            Dhian Singh Shah Sikandar
+                                        </h5>
+
+                                    </div>
+                                </center>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="btn-group">
+                                <a href="https://drive.google.com/file/d/0B8dwz_QudL6BSVc1UDQ4VkZrR1ZlYWQ1Z3J5TUc2MzRDcENJ/view?usp=sharing&resourcekey=0-9t43tI1EuMAqx2FJ7ispzQ"
+                                    class="btn btn-primary" target="_blank">
+                                    Read Now </a>
+                                <section id="contactUS">
+
+                                    <div class="container userForm">
+
+                                        <a href="javascript:void(
+                                  window.open(
+                                    'https://form.jotform.com/213013538899059',
+                                    'blank',
+                                    'scrollbars=yes,
+                                    toolbar=no,
+                                    width=700,
+                                    height=500'
+                                  )
+                                )
+                              ">
+                                            <!-- bootstrap contact button -->
+                                            <button type="button" class="btn btn-primary">
+                                                Contact Us</button>
+                                        </a>
+
+
+                                    </div>
+                                </section>
+                                <!-- END CONTACT US -->
+                            </div>
+                        </div>
+        </section>
+
+
+        <!-- Feedback form -->
+
+
+        <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript">
+            new JotformFeedback({
+                formId: "213014054021434",
+                buttonText: "Feedback",
+                base: "https://form.jotform.com/",
+                background: "#F59202",
+                fontColor: "#FFFFFF",
+                buttonSide: "right",
+                buttonAlign: "center",
+                type: false,
+                width: 700,
+                height: 500,
+                isCardForm: false
+            });
+        </script>
+
+
+
+
+
+        <!-- LOADING SCREEN -->
+        <section id="loading" class=" ">
+            <div class="spinner ">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </section>
+        <!-- END LOADING SCREEN -->
+
+        <!-- GO UP BUTTON -->
+        <button id="btnUp" class="btn  btn-light p-2 rounded-circle">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+        <!-- END GO UP BUTTON -->
+
+        <!-- SCRIPT -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <!-- END SCRIPT -->
+
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+        // ]]>
+        </script>
+
+</body>
+
+</html>
